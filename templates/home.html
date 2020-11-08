@@ -1,0 +1,54 @@
+<h1>FLASK APP RUNNING</h1>
+<br>
+<h2>Please Enter your Information below :</h2>
+<br>
+
+<form  method="POST">
+   
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    
+    <div>
+        {{ form.pre.label }} {{form.pre}}
+    </div>
+    
+    <br>
+    <div>
+        {{ form.glu.label}} {{form.glu}}
+    </div>
+
+    <br>
+    <div>
+        {{form.blood.label}}{{form.blood}}
+    </div>
+
+    <br>
+    <div>
+        {{form.skin.label}}{{form.skin}}
+    </div>
+
+    <br>
+    <div>
+        {{form.insu.label}}{{form.insu}}
+    </div>
+
+    <br>
+    <div>
+        {{form.bmi.label}}{{form.bmi}}
+    </div>
+
+    <br>
+    <div>
+        {{form.dpf.label}}{{form.dpf}}
+    </div>
+    
+    <br>
+    <div>
+        {{form.age.label}}{{form.age}}
+    </div>
+    <br>
+
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
